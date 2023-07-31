@@ -1,0 +1,87 @@
+\documentclass [11pt, a4paper]{beamer}
+\usetheme {CambridgeUS}
+\usecolortheme {wolverine}
+\definecolor{aliceblue}{rgb}{0.62,0.94,1.0}
+\setbeamercolor{background canvas}{bg=aliceblue}
+\usepackage[latin1,utf8]{inputenc}
+\usepackage[portuguese]{babel}
+\usepackage{multicol}
+\usepackage{verbatim}
+\usepackage{graphicx}
+\usepackage{adjustbox}
+\author{Alexandre Dinis Bravo Leal Rodrigues}
+\title{Produção de Documentos Técnicos}
+\date{fc54472 - TP 11}
+\begin{document}
+\maketitle
+\begin{frame}{Modelo Otimizado}
+\begin{table} [h]
+\begin{center}
+\caption{\bf Tabela com 180 funcionários}
+\begin{adjustbox}{max width=\textwidth,max totalheight=\textheight,keepaspectratio}
+\begin{tabular} {|c|c|c|c|c|c|c|c|}
+\hline 
+Dia	& Nº Aleatório & Nº Encomendas recebidas &	Nº Encomendas a Produzir &	Capacidade Produção diária &	Nº Encomendas Produzidas &	Nº Encomendas em Atraso &	Percentagem Ocupação Mão-de-obra \\ 
+\hline 
+1 &	0,821 &	35000 &	35000 &	33480 &	33480 &	1520 &	100,00\%\\ \hline 
+2 &	0,305 &	30000 &	31520 &	33480 &	31520 &	0 &	94,15\%\\ \hline
+3 &	0,464 &	32500 &	32500 &	33480 &	32500 &	0 &	97,07\%\\ \hline
+4 &	0,131 &	27500 &	27500 &	33480 &	27500 &	0 &	82,14\%\\ \hline
+5 &	0,049 &	25000 &	25000 &	33480 &	25000 &	0 &	74,67\%\\ \hline
+6 &	0,516 &	32500 &	32500 &	33480 &	32500 &	0 &	97,07\%\\ \hline
+7 &	0,631 &	32500 &	32500 &	33480 &	32500 &	0 &	97,07\%\\ \hline
+8 &	0,265 &	30000 &	30000 &	33480 &	30000 &	0 &	89,61\%\\ \hline
+9 &	0,124 &	27500 &	27500 &	33480 &	27500 &	0 &	82,14\%\\ \hline
+10 &	0,765 &	35000 &	35000 &	33480 &	33480 &	1520 &	100,00\%\\ \hline
+11 &	0,41 &	30000 &	31520 &	33480 &	31520 &	0 &	94,15\%\\ \hline
+12 &	0,776 &	35000 &	35000 &	33480 &	33480 &	1520 &	100,00\%\\ \hline
+13 &	0,103 &	27500 &	29020 &	33480 &	29020 &	0 &	86,68\%\\ \hline
+14 &	0,881 &	40000 &	40000 &	33480 &	33480 &	6520 &	100,00\%\\ \hline
+15 &	0,855 &	35000 &	41520 &	33480 &	33480 &	8040 &	100,00\%\\ \hline
+16 &	0,92 &	40000 &	48040 &	33480 &	33480 &	14560 &	100,00\%\\ \hline
+17 &	0,655 &	32500 &	47060 &	33480 &	33480 &	13580 &	100,00\%\\ \hline
+18 &	0,716 &	35000 &	48580 &	33480 &	33480 &	15100 &	100,00\%\\ \hline
+19 &	0,099 &	25000 &	40100 &	33480 &	33480 &	6620 &	100,00\%\\ \hline
+20 &	0,777 &	35000 &	41620 &	33480 &	33480 &	8140 &	100,00\%\\ \hline
+21 &	0,57 &	32500 &	40640 &	33480 &	33480 &	7160 &	100,00\%\\ \hline
+22 &	0,495 &	32500 &	39660 &	33480 &	33480 &	6180 &	100,00\%\\ \hline
+23 &	0,991 &	40000 &	46180 &	33480 &	33480 &	12700 &	100,00\%\\ \hline
+24 &	0,694 &	32500 &	45200 &	33480 &	33480 &	11720 &	100,00\%\\ \hline
+25 &	0,13 &	27500 &	39220 &	33480 &	33480 &	5740 &	100,00\%\\ \hline
+26 &	0,141 &	27500 &	33240 &	33480 &	33240 &	0 &	99,28\%\\ \hline
+27 &	0,221 &	27500 &	27500 &	33480 &	27500 &	0 &	82,14\%\\ \hline
+28 &	0,371 &	30000 &	30000 &	33480 &	30000 &	0 &	89,61\%\\ \hline
+29 &	0,905 &	40000 &	40000 &	33480 &	33480 &	6520 &	100,00\%\\ \hline
+30 &	0,555 &	32500 &	39020 &	33480 &	33480 &	5540 &	100,00\%\\ \hline
+31 &	0,15 &	27500 &	33040 &	33480 &	33040 &	0 &	98,69\%\\
+\hline 
+\end{tabular}
+\end{adjustbox}
+\end{center}
+\end{table}
+\end{frame}
+\begin{frame}{Modelo Otimizado}
+\begin{figure} [h]
+\begin{center}
+\caption{\bf Percentagem de mão de obra}
+\includegraphics[scale=0.8]{grafico2}
+\end{center}
+\end{figure}
+\end{frame}
+\begin{frame}{Explicação}
+Tendo em conta as tabelas e gráficos: \par
+Conclui-se que o número de funcionários escolhido (180) é o mais acertado, devido a que, graças à influência do número de aluno (que acrescenta a soma dos seus algarismos a 40 para chegar à quantidade de kg de lixo apanhados nas praias portuguesas), a produtividade e a perçentagem de ocupação de mão-de-obra mantém-se o mais proveitosas possíveis. 
+\end{frame}
+\begin{frame}{Imagem}
+\begin{figure} [h]
+\begin{center}
+\includegraphics[scale=0.2]{plastico}
+\end{center}
+\end{figure}
+\begin{thebibliography}{}
+\bibitem {SuperInteressante}
+Plástico nos oceanos pode triplicar até 2025 by Carol Castro.\par
+[https://super.abril.com.br/ciencia/plastico-nos-oceanos-pode-triplicar-ate-2025]
+\end{thebibliography}
+\end{frame}
+\end{document}
